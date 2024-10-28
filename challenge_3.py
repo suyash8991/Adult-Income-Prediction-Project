@@ -10,16 +10,13 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler,OneHotEncoder
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.model_selection import train_test_split, KFold, StratifiedKFold, cross_val_score, cross_validate, RandomizedSearchCV
-from imblearn.over_sampling import SMOTENC
+from sklearn.model_selection import train_test_split
 from scipy.stats.mstats import winsorize
-from utility.functions import  datapreprocessing,standardize, eval_table, evaluate, table_update, plot_confusion_matrix, classifiers, table_imbalance,table_missing_values,table_outliers,classifiers_weights
-from main import df, random_state
-import seaborn as sns
-import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from library.data_preprocessing import datapreprocessing, standardize
+from library.evaluation import evaluate
+from main import df, random_state, classifiers, table_outliers
+
 np.random.seed(random_state)
 
 # ================CHALLENGE 2 : Outliers================
