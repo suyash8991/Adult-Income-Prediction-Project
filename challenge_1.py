@@ -18,9 +18,12 @@ from imblearn.over_sampling import SMOTENC
 from scipy.stats.mstats import winsorize
 
 from main import df,random_state
-from utility.functions import  datapreprocessing,standardize, eval_table, evaluate, table_update, plot_confusion_matrix, classifiers, table_imbalance,table_missing_values,table_outliers,classifiers_weights
+from utility.functions import  datapreprocessing,standardize, eval_table, evaluate, table_update, plot_confusion_matrix, table_imbalance,table_missing_values,table_outliers
+from config.classifier_config import BASE_CLASSIFIER_CONFIG,WEIGHTED_CLASSIFIER_CONFIG
 np.random.seed(random_state)
 
+
+classifiers = BASE_CLASSIFIER_CONFIG
 
 # ###  Total rows : 43957
 
