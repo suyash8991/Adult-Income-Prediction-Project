@@ -3,8 +3,19 @@
 ## Overview
 This project analyzes the Adult Income Dataset to predict whether an individual's income exceeds $50K per year based on census data. The analysis focuses on addressing three key machine learning challenges: class imbalance, missing values, and outliers.
 
-## Dataset Description
-The Adult Income Dataset contains census data with the following features:
+## Dataset Information
+This project uses the Adult Income Dataset from the UCI Machine Learning Repository.
+
+### Dataset Source
+- **Name**: Adult Income Dataset
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult)
+- **Original Name**: Census Income Dataset
+- **Year**: 1994
+- **Donor**: Ronny Kohavi and Barry Becker, Data Mining and Visualization, Silicon Graphics
+
+### Dataset Description
+The dataset was extracted from the 1994 Census bureau database. The prediction task is to determine whether a person makes over $50K a year based on census data.
+The dataset contains census data with the following features:
 - Demographic attributes (age, gender, race, native country)
 - Educational information (education level, educational-num)
 - Employment details (workclass, occupation, hours-per-week)
