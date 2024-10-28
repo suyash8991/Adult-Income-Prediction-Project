@@ -9,7 +9,7 @@
 import pandas as pd
 import numpy as np
 from imblearn.over_sampling import SMOTENC
-from main import df, random_state, classifiers, classifiers_weights, table_imbalance
+from src.main import df, random_state, classifiers, classifiers_weights, table_imbalance
 from sklearn.model_selection import train_test_split
 from library.data_preprocessing import datapreprocessing, standardize
 from library.visualization import plot_confusion_matrix
