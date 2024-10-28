@@ -8,22 +8,14 @@
 
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler,OneHotEncoder
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.model_selection import train_test_split, KFold, StratifiedKFold, cross_val_score, cross_validate, RandomizedSearchCV
 from imblearn.over_sampling import SMOTENC
-from scipy.stats.mstats import winsorize
-
-from main import df,random_state
-from utility.functions import  datapreprocessing,standardize, eval_table, evaluate, table_update, plot_confusion_matrix, table_imbalance,table_missing_values,table_outliers
-from config.classifier_config import BASE_CLASSIFIER_CONFIG,WEIGHTED_CLASSIFIER_CONFIG
+from main import df, random_state, classifiers, classifiers_weights, table_imbalance
+from library.data_preprocessing import datapreprocessing, standardize
+from library.visualization import plot_confusion_matrix
+from library.evaluation import evaluate
 np.random.seed(random_state)
 
 
-classifiers = BASE_CLASSIFIER_CONFIG
 
 # ###  Total rows : 43957
 
@@ -141,7 +133,7 @@ results = evaluate(classifiers_weights, X_train_c1_st3, X_val_c1_st3, y_train, y
 
 print("\nChallenge Class Imbalance - Strategy Cost Sensitive learning\n",table_imbalance['Random Forest'].iloc[2,4])
 
-plot_confusion_matrix('Class Imbalance','Cost Sensitive Learning')
+plot_confusion_matrix(table_imbalance,'Class Imbalance','Cost Sensitive Learning')
 
 #Printing Final table for Challenge 1 : Class Imbalance
 print("Challenge 1 : Class Imbalance")
