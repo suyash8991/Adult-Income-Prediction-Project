@@ -12,7 +12,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from library.data_preprocessing import datapreprocessing, standardize
 from library.evaluation import evaluate
-from main import df, random_state, classifiers, table_missing_values
+from src.main import df, random_state, classifiers, table_missing_values
 np.random.seed(random_state)
 
 '''

@@ -15,7 +15,7 @@ from scipy.stats.mstats import winsorize
 from sklearn.model_selection import train_test_split
 from library.data_preprocessing import datapreprocessing, standardize
 from library.evaluation import evaluate
-from main import df, random_state, classifiers, table_outliers
+from src.main import df, random_state, classifiers, table_outliers
 
 np.random.seed(random_state)
 
