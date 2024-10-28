@@ -83,12 +83,6 @@ Handling outliers in numerical features:
 - Significant class imbalance with majority of records having income ≤50K
 - Non-normal distribution in numerical features, particularly in capital-gain and capital-loss
 
-## Dependencies
-All required dependencies are listed in requirements.txt. Install them using:
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 1. Clone the repository
 2. Install required dependencies:
